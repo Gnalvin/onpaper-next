@@ -1,0 +1,62 @@
+.header {
+  margin: auto;
+  max-width: 1450px;
+}
+.title {
+  .rank-name {
+    font-weight: 600;
+    font-size: 26px;
+    margin: 0;
+    color: var(--color-text1);
+  }
+  .describe {
+    margin-top: 20px;
+    font-size: 16px;
+    margin-bottom: 0;
+    color: var(--color-text3);
+  }
+}
+.tabs {
+  margin-top: 20px;
+  position: sticky;
+  top: 50px;
+  padding: 10px 0px 10px 0px;
+  background-color: var(--bgc);
+  z-index: 2;
+  transition: all 0.3s;
+  .tab {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    color:var(--color-text2);
+  }
+  .chose-tab{
+    font-weight: 600;
+    font-size: 15px;
+    color:var(--primary-middle-color);
+  }
+}
+
+.first-tab::after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(v-bind('choiceStyle.timex'));
+  transition: transform 0.16s ease-in-out 0s;
+  background:var(--primary-middle-color);
+  height: 2px;
+  border-radius: 2px;
+}
+
+.content-wrap {
+  display: flex;
+  justify-content: center;
+}

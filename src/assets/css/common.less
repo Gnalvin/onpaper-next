@@ -1,0 +1,187 @@
+:root {
+  --primary-color: #1f6ce0;
+  --primary-hover-color:#3f5bca;
+  --primary-middle-color:#409eff;
+  --primary-transparent-color:rgba(0,102,255,0.2);
+  --primary-err-color:#fc638c;
+  --primary-success-color:#3aa901;
+  --primary-transparent-err-color:rgba(255, 108, 147,0.2);
+  --primary-disable-color:#aebbc8;
+  --primary-white-hover-color:#f4faff;
+}
+
+
+/* 根据系统的深色模式响应深色变量 */
+.data-theme-light {
+  --bgc: #fff;
+  --bgc2:rgb(243, 245, 248);
+  --bgc3:#f5f5f5;
+  --bgc4:#f1f2f5;
+  --surface-color1:#fff;
+  --surface-color1-hover:rgba(22, 24, 35, 0.07);
+  --surface-color1-shadow:rgba(0,0,0,0.12);
+  --surface-color2:#ededed;
+  --surface-color2-hover: #d0d0d0;
+  --surface-color3:#e4e8ff;
+  --surface-color3-hover:#cdd4fb;
+  --surface-color4:#fff;
+  --surface-color4-shadow:rgba(0,0,0,0.25);
+  --bgc-hover: #f5f5f5;
+  --black-color:rgb(140, 146, 151);
+  --color-text1:  #1f1f1f;
+  --color-text1-hover: #1e1e1e;
+  --color-text2: #474747;
+  --color-text2-hover: #444;
+  --color-text3: #7d7d7d;
+  --color-text3-hover: #8f8f8f;
+  --color-text4: rgba(53, 121, 223, 0.8);
+  --color-text4-hover: rgba(53, 121, 223, 1);
+  --color-text5:#398abc;
+  --color-regular:#606266;
+  --transparent-hover:  rgba(51, 51, 51, 0.1);
+  --transparent-little-hover:rgba(51, 51, 51,0.03);
+  --transparent-middle-hover:rgba(0, 0, 0, 0.3);
+  --transparent-theme-color1:rgba(255,255,255,0.7);
+  --transparent-theme-color2:rgba(245,245,245,0.8);
+  --bgc-linear-gradient:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  --border-color2: #dedede;
+  --border-color2-hover: #333;
+  --border-color1:#e5e7ee;
+  --border-color1-hover:#6c6e72;
+  --border-color3:#f0f0f0;
+  --border-color4:#dcdfe6;
+  --btn-color1:var(--primary-color);
+  --btn-color1-hover:var(--primary-hover-color);
+  --btn-cancel-color:#f5f5f5;
+  --btn-cancel-hover-color:#e5e5e5;
+  --btn-color2:#fff;
+  --btn-color2-hover:#f5f8ff;
+  --btn-color3:#eaeef4;
+  --btn-color3-hover:#c0ccdf;
+  --input-bgc:#fff;
+  --bgc-chose-color:#e8f0fe;
+  --blue-mask:#d7e4ff25;
+  --blue-mask-chose:#d7e4ff50;
+  --blue-border-color:#d7e4ff;
+  --skeleton-color:#f0f2f5;
+  --skeleton-to-color:#e6e8eb;
+}
+
+.data-theme-dark{
+  --bgc: #1d1d1d;
+  --bgc2:#0d0d0d;
+  --bgc3:#333333;
+  --bgc4:#0c0c0c;
+  --surface-color1:#323232;
+  --surface-color1-hover:#5c5c5c;
+  --surface-color1-shadow:rgba(255,255,255,0.12);
+  --surface-color2:#2b2b2b;
+  --surface-color2-hover: #364561;
+  --surface-color3:#42486c;
+  --surface-color3-hover:#5a6297;
+  --surface-color4:#16161b;
+  --surface-color4-shadow:rgba(255,255,255,0.25);;
+  --bgc-hover: #3a3a3a;
+  --black-color:rgb(150, 160, 168);
+  --color-text1: #f5f5f5;
+  --color-text1-hover: #f6f6f6;
+  --color-text2: #d6d6d6;
+  --color-text2-hover: #dbdbdb;
+  --color-text3: #b5b5b5;
+  --color-text3-hover: #bdbdbd;
+  --color-text4: rgba(84, 133, 206, 0.8);
+  --color-text4-hover: rgb(63 ,139 ,255);
+  --color-text5:#669FC2;
+  --color-regular:#CFD3DC;
+  --transparent-hover: rgba(255,255,255,0.2);
+  --transparent-little-hover:rgba(255,255,255,0.04);
+  --transparent-middle-hover:rgba(255,255,255,0.15);
+  --transparent-theme-color1:rgba(0,0,0,0.7);
+  --transparent-theme-color2:rgba(0,0,0,0.85);
+  --bgc-linear-gradient:linear-gradient(rgba(255, 255,255), rgba(255, 255, 255, 0));
+  --border-color2: #dedede;
+  --border-color2-hover: #dedede;
+  --border-color1:#4c4d4f;
+  --border-color1-hover:#6c6e72;
+  --border-color3:#2b2b33;
+  --border-color4:#4c4d4f;
+  --btn-color1:#205fb2;
+  --btn-color1-hover:#004fb6;
+  --btn-cancel-color:#434343;
+  --btn-cancel-hover-color:#505050;
+  --btn-color2:#3b3b3b;
+  --btn-color2-hover:rgb(49, 49, 49);
+  --btn-color3:rgb(92, 92, 92);
+  --btn-color3-hover:rgb(70,70,70);
+  --input-bgc:#383838;
+  --bgc-chose-color:#383846;
+  --blue-mask:#52618025;
+  --blue-mask-chose:#52618050;
+  --blue-border-color:#76829c;
+  --skeleton-color:#303030;
+  --skeleton-to-color:#424243;
+}
+
+:root[data-theme="light"]{
+  .data-theme-light()
+}
+
+:root[data-theme="dark"]{
+  .data-theme-dark()
+}
+
+:root[data-theme="auto"]{
+  @media (prefers-color-scheme: dark) {
+    .data-theme-dark()
+  }
+  @media (prefers-color-scheme: light) {
+    .data-theme-light()
+  }
+}
+
+
+//最顶端加载进度条
+#nprogress {
+  .bar {
+    height: 2px !important;
+    z-index: 9999 !important;
+    background: rgba(53, 121, 223) !important; //自定义颜色
+  }
+}
+// 默认的vue 动画
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+//遮罩层阴影
+.top-mask-layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.one-line {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all; // 只对英文起作用，以字母作为依据，强制换行
+  line-break: anywhere; // 任意位置都可以作为换行点，包括任意的标点。
+  white-space: normal !important;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+
+
+
